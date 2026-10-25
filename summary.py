@@ -18,23 +18,6 @@
 #     print(updated_content)
 
 
-# import sys
-# from collections import Counter
-# filename = sys.argv[1]
-# with open(filename) as f:
-#     lines = f.readlines()
-# print("Total lines:", len(lines))
-
-# counts = Counter()
-# for line in lines:
-#     fields = line.split()
-#     if len(fields) > 0:
-#         key = fields[0]
-#         counts[key] += 1
-# print("Top 5:")
-# for item, n in counts.most_common(5):
-#     print(item, n)
-
 import sys
 from collections import Counter
 filename = sys.argv[1]
@@ -51,3 +34,27 @@ for line in lines:
 print("Top 5:")
 for item, n in counts.most_common(5):
     print(item, n)
+
+# import keyword
+# import sys
+# from collections import Counter
+# filename = sys.argv[1]
+# index = sys.argv[2]
+# keyword = sys.argv[3]
+# # print(sys.argv)
+# with open(filename) as f:
+#     lines = f.readlines()
+# print("Total lines:", len(lines))
+
+# counts = Counter()
+# for line in lines: 
+#     fields = line.split()
+#     if len(fields) > int(index):
+#         if "k3s" not in fields[int(index)]:
+#             continue
+#         print(line)
+#         key = fields[int(index)]
+#         counts[key] += 1
+# print("Top 5:")
+# for item, n in counts.most_common(5):
+#     print(item, n)
